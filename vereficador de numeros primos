@@ -14,7 +14,7 @@ programa {
         }
         se(divisores == 2)
           escreva("o numero ", x, "\té primo")
-          senao{ escreva("valor negativo ou igual a zero\n")
+          senao{ escreva("\no numero ", x, "\t não é primo\n")
 
           }
 
