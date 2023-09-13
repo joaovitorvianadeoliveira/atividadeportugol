@@ -6,6 +6,7 @@
 
     real capital, juros, montante
     inteiro tempo, i
+    escreva("\ndigite o capital\t")
     escreva("capital: ")
     leia(capital)
     escreva("juros: ")
@@ -30,4 +31,3 @@ limpa()
 }
 
 }
-    
