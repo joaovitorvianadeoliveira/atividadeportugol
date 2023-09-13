@@ -1,6 +1,8 @@
 programa {
-  funcao inicio() {
-    real peso
+  logico reiniciar = verdadeiro
+
+  funcao calculeImc(){
+     real peso
     real altura
     real IMC
  
@@ -10,6 +12,7 @@ escreva("\npeso: ")
   escreva("\naAgora digite sua altura\n")
   escreva("\naltura; \t")
   leia(altura)
+ limpa()
 IMC=peso/(altura*altura)
 
   escreva("\nseu indice de massa coporal é :" + IMC )
@@ -17,12 +20,25 @@ IMC=peso/(altura*altura)
 se(IMC<= 18.5){
   escreva("cuidado voce esta abaixo do peso ideial")}
 
-  senao se((IMC>=18.5)) e (IMC<=24.9){
+  senao se (IMC<=24.9){
 escreva("\nparabéns você está no peso ideial\n")}
 
-senao se ((IMC>=24.9)) e (IMC>= 25 ){
-  escreva("você está acima do peso ideial")
 
+senao se   (IMC>= 25 ){
+  escreva("\nvocê está acima do peso ideial\n")
+ 
 }
+  }
+
+ funcao inicio() {
+enquanto(reiniciar){
+calculeImc()
+escreva("deseja calcular novamente, para sim 'verdadeiro' ou 'falso' para encerrar\n")
+leia(reiniciar)
+limpa()
+}
+
+    
+
 }
 }
