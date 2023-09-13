@@ -1,0 +1,17 @@
+programa {
+  funcao inicio() {
+    real n1, n2, n3, n4, media
+
+    escreva("digite a nota 1:\t")
+    leia(n1)
+    escreva("digite a nota 2:\t")
+    leia(n2)
+    escreva("digite a nota 3:\t")
+    leia(n3)
+    escreva("digite a nota 4:\t")
+    leia(n4)
+media=(n1+n2+n3+n4)/4
+limpa()
+escreva("media: "+media)
+  }
+}
