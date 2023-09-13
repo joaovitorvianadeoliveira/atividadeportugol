@@ -1,6 +1,9 @@
-programa {
-  inclua biblioteca Matematica-->mat
-  funcao inicio() {
+
+    programa {
+     inclua biblioteca Matematica-->mat
+     logico reiniciar = verdadeiro
+     funcao calculemontante() {
+
     real capital, juros, montante
     inteiro tempo, i
     escreva("capital: ")
@@ -16,4 +19,15 @@ programa {
       montante = montante + (montante)
     }
   }
+  funcao inicio() {
+enquanto(reiniciar){
+calculemontante()
+escreva("deseja calcular novamente, para sim 'verdadeiro' ou 'falso' para encerrar\n")
+leia(reiniciar)
+limpa()
 }
+
+}
+
+}
+    
