@@ -1,0 +1,19 @@
+programa {
+  inclua biblioteca Matematica-->mat
+  funcao inicio() {
+    real capital, juros, montante
+    inteiro tempo, i
+    escreva("capital: ")
+    leia(capital)
+    escreva("juros: ")
+    leia(juros)
+    escreva("meses: ")
+    leia(tempo)
+    juros = juros/100
+    montante = capital * (1+juros+tempo)
+    para(i=1;i<=tempo;i++){
+      escreva("montante: ", montante,"\n")
+      montante = montante + (montante)
+    }
+  }
+}
