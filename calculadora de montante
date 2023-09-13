@@ -1,12 +1,14 @@
 
-    programa {
+
+  programa {
      inclua biblioteca Matematica-->mat
      logico reiniciar = verdadeiro
      funcao calculemontante() {
 
     real capital, juros, montante
     inteiro tempo, i
-    escreva("\ndigite o capital\t")
+    escreva("\ncalculadora de juros compostos\n")
+    escreva("\ndigite o capital\n")
     escreva("capital: ")
     leia(capital)
     escreva("juros: ")
