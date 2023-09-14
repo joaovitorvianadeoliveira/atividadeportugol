@@ -1,8 +1,10 @@
 programa {
-  funcao inicio() {
+  logico reiniciar = verdadeiro
+  
     real n1, n2, n3, n4, media
-
-    escreva("digite a nota 1:\t")
+funcao calculemedia(){
+  escreva("\ncalculadora de media:\n")
+    escreva("\ndigite a nota 1:\t")
     leia(n1)
     escreva("digite a nota 2:\t")
     leia(n2)
@@ -13,5 +15,14 @@ programa {
 media=(n1+n2+n3+n4)/4
 limpa()
 escreva("media: "+media)
-  }
 }
+funcao inicio(){
+  enquanto(reiniciar){
+  calculemedia()
+  escreva("deseja calcular novamente, para sim 'verdadeiro' ou 'falso' para encerrar\n")
+  leia(reiniciar)
+  limpa()
+ 
+    }
+     }
+      }
